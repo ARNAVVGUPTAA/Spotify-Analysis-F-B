@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <h1>Music Preference Survey</h1>
+    <form action="{{ url_for('submit') }}" method="post">
+        <label for="openness1">Do you prefer songs with complex lyrics?</label><br>
+        <input type="radio" id="openness1_1" name="openness1" value="1"> Strongly Disagree<br>
+        <input type="radio" id="openness1_2" name="openness1" value="2"> Disagree<br>
+        <input type="radio" id="openness1_3" name="openness1" value="3"> Neutral<br>
+        <input type="radio" id="openness1_4" name="openness1" value="4"> Agree<br>
+        <input type="radio" id="openness1_5" name="openness1" value="5"> Strongly Agree<br><br>
+
+        <label for="openness2">Do you prefer songs with unique sounds?</label><br>
+        <input type="radio" id="openness2_1" name="openness2" value="1"> Strongly Disagree<br>
+        <input type="radio" id="openness2_2" name="openness2" value="2"> Disagree<br>
+        <input type="radio" id="openness2_3" name="openness2" value="3"> Neutral<br>
+        <input type="radio" id="openness2_4" name="openness2" value="4"> Agree<br>
+        <input type="radio" id="openness2_5" name="openness2" value="5"> Strongly Agree<br><br>
+
+        <label for="conscentious1">I prefer to listen to music that helps me stay focused and organized.</label><br>
+        <input type="radio" id="conscentious1_1" name="conscentious1" value="1"> Strongly Disagree<br>
+        <input type="radio" id="conscentious1_2" name="conscentious1" value="2"> Disagree<br>
+        <input type="radio" id="conscentious1_3" name="conscentious1" value="3"> Neutral<br>
+        <input type="radio" id="conscentious1_4" name="conscentious1" value="4"> Agree<br>
+        <input type="radio" id="conscentious1_5" name="conscentious1" value="5"> Strongly Agree<br><br> 
+
+        <label for="conscentious2">I stick to a few favorite genres or artists rather than frequently exploring new music.</label><br>
+        <input type="radio" id="conscentious2_1" name="conscentious2" value="1"> Strongly Disagree<br>
+        <input type="radio" id="conscentious2_2" name="conscentious2" value="2"> Disagree<br>
+        <input type="radio" id="conscentious2_3" name="conscentious2" value="3"> Neutral<br>
+        <input type="radio" id="conscentious2_4" name="conscentious2" value="4"> Agree<br>
+        <input type="radio" id="conscentious2_5" name="conscentious2" value="5"> Strongly Agree<br><br>
+
+        <label for="extraversion1">I enjoy listening to upbeat and energetic music in social settings.</label><br>
+        <input type="radio" id="extraversion1_1" name="extraversion1" value="1"> Strongly Disagree<br>
+        <input type="radio" id="extraversion1_2" name="extraversion1" value="2"> Disagree<br>
+        <input type="radio" id="extraversion1_3" name="extraversion1" value="3"> Neutral<br>
+        <input type="radio" id="extraversion1_4" name="extraversion1" value="4"> Agree<br>
+        <input type="radio" id="extraversion1_5" name="extraversion1" value="5"> Strongly Agree<br><br> 
+
+        <label for="extraversion2">I often share new songs or artists with friends and family.</label><br>
+        <input type="radio" id="extraversion2_1" name="extraversion2" value="1"> Strongly Disagree<br>
+        <input type="radio" id="extraversion2_2" name="extraversion2" value="2"> Disagree<br>
+        <input type="radio" id="extraversion2_3" name="extraversion2" value="3"> Neutral<br>
+        <input type="radio" id="extraversion2_4" name="extraversion2" value="4"> Agree<br>
+        <input type="radio" id="extraversion2_5" name="extraversion2" value="5"> Strongly Agree<br><br> 
+
+        <label for="agreeableness1">I prefer music with positive and uplifting messages.</label><br>
+        <input type="radio" id="agreeableness1_1" name="agreeableness1" value="1"> Strongly Disagree<br>
+        <input type="radio" id="agreeableness1_2" name="agreeableness1" value="2"> Disagree<br>
+        <input type="radio" id="agreeableness1_3" name="agreeableness1" value="3"> Neutral<br>
+        <input type="radio" id="agreeableness1_4" name="agreeableness1" value="4"> Agree<br>
+        <input type="radio" id="agreeableness1_5" name="agreeableness1" value="5"> Strongly Agree<br><br> 
+
+        <label for="agreeableness2">I am drawn to songs that promote social harmony and understanding.</label><br>
+        <input type="radio" id="agreeableness2_1" name="agreeableness2" value="1"> Strongly Disagree<br>
+        <input type="radio" id="agreeableness2_2" name="agreeableness2" value="2"> Disagree<br>
+        <input type="radio" id="agreeableness2_3" name="agreeableness2" value="3"> Neutral<br>
+        <input type="radio" id="agreeableness2_4" name="agreeableness2" value="4"> Agree<br>
+        <input type="radio" id="agreeableness2_5" name="agreeableness2" value="5"> Strongly Agree<br><br> 
+
+        <label for="neuroticism1"> I often listen to music that reflects or helps me process my emotions, especially when feeling stressed or anxious.</label><br>
+        <input type="radio" id="neuroticism1_1" name="neuroticism1" value="1"> Strongly Disagree<br>
+        <input type="radio" id="neuroticism1_2" name="neuroticism1" value="2"> Disagree<br>
+        <input type="radio" id="neuroticism1_3" name="neuroticism1" value="3"> Neutral<br>
+        <input type="radio" id="neuroticism1_4" name="neuroticism1" value="4"> Agree<br>
+        <input type="radio" id="neuroticism1_5" name="neuroticism1" value="5"> Strongly Agree<br><br> 
+
+        <label for="neuroticism2"> I am drawn to songs with intense or melancholic themes that resonate with my mood.</label><br>
+        <input type="radio" id="neuroticism2_1" name="neuroticism2" value="1"> Strongly Disagree<br>
+        <input type="radio" id="neuroticism2_2" name="neuroticism2" value="2"> Disagree<br>
+        <input type="radio" id="neuroticism2_3" name="neuroticism2" value="3"> Neutral<br>
+        <input type="radio" id="neuroticism2_4" name="neuroticism2" value="4"> Agree<br>
+        <input type="radio" id="neuroticism2_5" name="neuroticism2" value="5"> Strongly Agree<br><br> 
+        
+        <label for="personality_trait">What is your personality type according to the 16 Personality Types defined: </label>
+        <select name="personality_trait" id="personality">
+            <option value="ISTG">ISTG</option>
+            <option value="ISTP">ISTP</option>
+            <option value="ISFJ">ISFJ</option>
+            <option value="ISFP">ISFP</option>
+            <option value="INTJ">INTJ</option>
+            <option value="INTP">INTP</option>
+            <option value="INFJ">INFJ</option>
+            <option value="INFP">INFP</option>
+            <option value="ESTG">ESTG</option>
+            <option value="ESTP">ESTP</option>
+            <option value="ESFJ">ESFJ</option>
+            <option value="ESFP">ESFP</option>
+            <option value="ENTJ">ENTJ</option>
+            <option value="ENTP">ENTP</option>
+            <option value="ENFJ">ENFJ</option>
+            <option value="ENFP">ENFP</option>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
